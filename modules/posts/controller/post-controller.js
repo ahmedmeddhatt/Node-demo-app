@@ -70,7 +70,7 @@ const deletePost = async(req, res) => {
     await Post.findByIdAndDelete(req.params.id)
 
         res.status(204).
-        json({status: 'success' , data: null})
+        json({status: 'success' })
     
 
 }
